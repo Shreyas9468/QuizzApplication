@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".FinalActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Quizz App"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginTop="192dp"
+        android:gravity="center"
+        android:textColor="#141313"
+        android:textSize="36sp"
+        android:background="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Your Score: 0" />
+
+    <TextView
+        android:id="@+id/wrong_questions_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:textColor="#0B0A0A"
+        android:textSize="36sp"
+        android:background="#76FF03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score_text_view"
+        tools:text="Wrong Questions: 0" />
+
+    <TextView
+        android:id="@+id/right_questions_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:textColor="#131413"
+        android:textSize="36sp"
+        android:background="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrong_questions_text_view"
+        tools:text="Right Questions: 0" />
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="#01579B"
+        android:text="Restart"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/right_questions_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
